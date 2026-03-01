@@ -134,21 +134,23 @@ header {
 
 /* --------------- 4.2 Information content ------------------- */
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .information-content {
     display: flex;
     flex-direction: column;
     text-align: center;
     flex-basis: 300px;
-    max-width: 600px;
+    max-width: 100%;
     margin: 100px 0;
+    align-items: center;
+    justify-content: center;
+}
+.information-content-wrapper {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    flex-basis: 250px;
+    max-width: 600px;
+
 }
 
 .header-text {
@@ -170,28 +172,30 @@ main {
 /* ------------------------------- 4.3 article-content -------------------------------- */
 .article-content {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .articles-position-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 80px;
     border: 2px dashed  black;
 }
 .articles-position-group article {
     display: flex;
-
+    flex-direction: row;
     gap: 20px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
     border: 2px dashed red;
 }
 
 .article-text {
+    border: 2px dashed orange;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 30px 20px;
-    border: 2px dashed orange;
 }
 
 .article-content img {
