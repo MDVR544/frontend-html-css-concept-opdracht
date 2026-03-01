@@ -88,6 +88,7 @@ header {
 .nav-bar-content nav {
     display: flex;
     flex-direction: row;
+    margin: 20px;
 }
 
 .nav-bar-content ul {
@@ -112,7 +113,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 670px;
+    flex-basis: 600px;
     gap: 20px;
     text-align: center;
     margin: 0 50px;
@@ -131,6 +132,78 @@ header {
     top: 80px;
 }
 
-/* --------------- 4.2 Introduction ------------------- */
+/* --------------- 4.2 Information content ------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-basis: 300px;
+    max-width: 600px;
+    margin: 100px 0;
+    justify-content: space-between;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-text h2 {
+    color: var(--purple);
+}
+.sub-text {
+    display: flex;
+    justify-content: center;
+}
+.sub-text a {
+    color: var(--purple);
+}
+
+/* ------------------------------- 4.3 article-content -------------------------------- */
+.article-content {
+    display: flex;
+}
+
+.articles-position-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    border: 2px dashed  black;
+}
+.articles-position-group article {
+    display: flex;
+
+    gap: 20px;
+    border: 2px dashed red;
+}
+
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 20px;
+    border: 2px dashed orange;
+}
+
+.article-content img {
+    width: 100%;
+    border: 2px dashed purple;
+}
+
+.article-content span {
+    flex-basis: 800px;
+}
+
+
+
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
