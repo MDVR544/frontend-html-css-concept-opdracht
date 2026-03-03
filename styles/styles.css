@@ -358,3 +358,21 @@ footer {
     min-height: 50px;
 }
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media (max-width: 600px) {
+    .nav-bar-content ul {
+        justify-content: space-evenly;
+    }
+    .header-content img {
+        position: relative;
+        top: 50px;
+    }
+
+    .articles-position-group article {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+        align-items: center;
+    }
+
+}
