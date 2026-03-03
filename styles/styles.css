@@ -291,6 +291,7 @@ form p {
     justify-content: center;
     flex-basis: 1000px;
     background: linear-gradient(90deg,rgba(72, 69, 228, 1) 0%, rgba(87, 34, 205, 1) 100%);
+    position: relative;
 }
 .form-wrapper {
     display: flex;
@@ -305,9 +306,16 @@ form p {
 .form-wrapper form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     flex-basis: 450px;
     min-width: 600px;
+}
+
+.labels-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
 }
 
 .input-fields {
@@ -316,9 +324,15 @@ form p {
     border: none;
     padding: 15px;
 }
+
 ::placeholder {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+}
+
+.form-wrapper button {
+    margin: 20px 0 0 0;
+    width: 100px;
 }
 
 /* ------------------------------- 4.6 footer -------------------------------- */
